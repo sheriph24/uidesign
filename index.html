@@ -3,47 +3,64 @@
 <head>
     <style>
         body{
-            padding:0.5% 20% ;
+            margin: 0 ;
+            padding: 0;
             font-family: sans-serif;
         }
-        header, main, footer{
+        main, section{
             border: 1px solid black;
         }
 
-        header{
+        main
+        {
             background-color: yellow;
-            padding: 3% 0%;
+            padding: 8px 0;
+            color: black;
+
         }
 
-        main{
-            background-color: black;
-            padding: 3% 7%;
+        section
+        {
+            margin-bottom: px;
+            padding: 40px 150px;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+
+
         }
-        footer{
-            padding: 3% 7%;
+
+        .sec1
+        {
+            background-color: black;
+            color: white;
+        }
+        .sec2{
+            background-color: white;
         }
         h1{
             text-align: center;
-            font-size: 2.5em;
-        }
-        main{
-            color: white;
+            font-size: 4em;
         }
         p{
             font-size: 1em;
-            letter-spacing: 1px;
-            word-spacing: 1px;
         }
 
-        button{
-            padding: 10px 25px;
-            font-weight: bolder;
-            font-size: 15px;
-            margin-right: 10px;
-            border: none;
+        a {
+            text-decoration: none;
+            padding: 15px;
+            display: inline-block;
+            font-weight: bold; 
+        }
+        a:link, a:visited, a:active {
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: yellowgreen;
+            color: black;
         }
         .btn1{
             background-color: yellow;
+            color: black;
         }
         .btn2{
             background-color: black;
@@ -68,23 +85,31 @@
     <title>UI Design Project</title>
 </head>
 <body>
-    <header>
+    <main>
         <h1>
             Compound selectors can be useful
         </h1>
-    </header> 
+    </main> 
 
-    <main>
+    <section class="sec1">
         <h2>Section one title.</h2>
-        <p id="sec-one">Netus et malesuada fames ac. <u><span id="span1">Sed cras ornare arcu</span></u> dui <br> vivamus. 
-        <b>Elementum integer enim neque</b> volutpat ac <br>tincidunt vitae semper.</p>
-        <button class="btn1" id="contact">contact me</button> <button class="btn1" id="learn">learn more about me</button>
-    </main>
-    <footer>
-            <h2>Section two title.</h2>
-            <p id="sec-two">Netus et malesuada fames ac. <u><span id="span2">Sed cras ornare arcu</span></u> dui<br> vivamus. 
-            <b>Elementum integer enim neque</b> volutpat ac <br>tincidunt vitae semper.</p>
-            <button class="btn2" id="contact">contact me</button> <button class="btn2" id="learn">learn more about me</button> 
-    </footer>   
+        <p class="sec-one">Netus et malesuada fames ac. <u>
+            <span id="span1">Sed cras ornare arcu</span>
+        </u> dui <br> vivamus. 
+        <b>Elementum integer enim neque</b> volutpat ac tincidunt vitae semper.</p>
+
+        <a class="btn1" href="#">contact me</a> 
+        <a class="btn1" href="#">learn more about me</a>
+    </section>
+
+    <section class="sec2">
+        <h2>Section two title.</h2>
+        <p class="sec-two">Netus et malesuada fames ac. <u>
+            <span id="span2">Sed cras ornare arcu</span>
+        </u> dui<br> vivamus. 
+        <b>Elementum integer enim neque</b> volutpat ac tincidunt vitae semper.</p>
+
+        <a class="btn2" href="#">contact me</a> <a class="btn2" href="#">learn more about me</a> 
+        </section>   
 </body>
 </html>
